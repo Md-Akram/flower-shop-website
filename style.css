@@ -250,6 +250,7 @@ span {
 
 .newsletter .container {
     background-image: url('./Flower Asset/Rectangle\ 9.png');
+    background-size: cover;
 }
 
 .newsletter .info-container {

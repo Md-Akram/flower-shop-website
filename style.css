@@ -1,8 +1,13 @@
 /* common styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@300;600;800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -88,7 +93,7 @@ p {
     align-items: center;
 }
 
-.featured .info-container {
+.info-container {
     width: 50%;
     align-items: center;
     margin: 50px 0;
@@ -119,7 +124,7 @@ h2 {
     /* width: 300px;
     height: 350px; */
     width: 30%;
-    height: 500px;
+    height: 400px;
 }
 
 .card-img {
@@ -163,6 +168,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 10px 0;
 }
 
 .service {
@@ -172,4 +178,41 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.offer {
+    height: 50vh;
+    background: rgba(167, 33, 98, 0.15);
+}
+
+.offer img {
+    object-fit: contain;
+}
+
+.offer span {
+    color: #E55473;
+}
+
+.instagram {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram .container {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.instagram .img-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instagram .img-container img {
+    width: 20%;
 }

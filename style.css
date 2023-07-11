@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
 .img-container {
@@ -40,7 +40,9 @@ img {
     height: 100%;
 }
 
-.btn {
+.btn,
+input,
+textarea {
     color: #FFF;
     font-size: 20px;
     font-style: normal;
@@ -50,6 +52,10 @@ img {
     background: #E55473;
     padding: 15px 30px;
     border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 section {
@@ -68,6 +74,10 @@ header {
     justify-content: center;
     background: rgba(229, 84, 115, 0.10);
     height: 100vh;
+}
+
+header .info-container {
+    align-items: start;
 }
 
 h1 {
@@ -93,10 +103,10 @@ p {
     align-items: center;
 }
 
-.info-container {
+.featured .info-container {
     width: 50%;
-    align-items: center;
-    margin: 50px 0;
+    text-align: center;
+    margin: 0;
 }
 
 h2 {
@@ -106,11 +116,6 @@ h2 {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-}
-
-.featured .info-container p {
-    text-align: center;
-    margin: 0;
 }
 
 .cards {
@@ -183,14 +188,27 @@ h2 {
 .offer {
     height: 50vh;
     background: rgba(167, 33, 98, 0.15);
+
+}
+
+.offer .info-container {
+    margin: 0;
 }
 
 .offer img {
     object-fit: contain;
 }
 
-.offer span {
+span {
     color: #E55473;
+}
+
+.marketing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .instagram {
@@ -206,6 +224,10 @@ h2 {
 
 }
 
+.instagram p {
+    text-align: center;
+}
+
 .instagram .img-container {
     width: 100%;
     display: flex;
@@ -214,5 +236,78 @@ h2 {
 }
 
 .instagram .img-container img {
-    width: 20%;
+    width: 22%;
+}
+
+.newsletter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+
+}
+
+.newsletter .container {
+    background-image: url('./Flower Asset/Rectangle\ 9.png');
+}
+
+.newsletter .info-container {
+    width: 100%;
+    margin: 50px 0;
+}
+
+input,
+textarea {
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 50px 0;
+    color: white;
+}
+
+footer .container {
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+footer h2,
+footer p,
+small {
+    color: white;
+}
+
+footer .info-container {
+
+    margin: 0;
+    align-items: flex-start;
+}
+
+
+
+footer .form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer form input,
+textarea {
+    width: 80%;
+    margin: 10px 0;
+    color: black
+}
+
+footer .btn {
+    width: 150px;
 }
